@@ -50,7 +50,7 @@ function App() {
   };
 
   const buildXmlBlob = () => {
-    const contactsXML = `<contacts>${contacts.map(contact => 
+    const contactsXML = `<?xml version="1.0"?> <contacts>${contacts.map(contact =>
       `<contact name="${contact.name}" number="${contact.number}" />`
     ).join('')}</contacts>`;
 
