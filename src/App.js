@@ -67,7 +67,7 @@ function App() {
     reader.onloadend = async function() {
       const base64data = reader.result.split(',')[1]; // Remove o cabeçalho da string base64
 
-      const githubToken = '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';
+      const githubToken = process.env.REACT_APP_GITHUB_TOKEN;
       const repoOwner = 'gngraco';
       const repoName = 'create-react-app';
       const path = 'public/contacts.xml';
